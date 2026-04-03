@@ -1,0 +1,10 @@
+[project]
+name = "interview-training-env"
+version = "0.1.0"
+description = "AI Interview Training Environment using OpenEnv"
+authors = [{name = "Shruti"}]
+dependencies = ["flask"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
