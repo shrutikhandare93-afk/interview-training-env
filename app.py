@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from environment import InterviewEnv
 
 app = Flask(__name__)
@@ -8,7 +8,7 @@ env = InterviewEnv()
 def home():
     return "Running 🚀"
 
-@app.route("/reset")
+@app.route("/reset", methods=["GET", "POST"])
 def reset():
     state = env.reset()
     return jsonify(state)
