@@ -1,0 +1,17 @@
+name: interview-training-env
+
+description: Adaptive interview preparation environment for AI agents
+
+actions:
+  select_topic:
+    type: string
+  difficulty:
+    type: string
+
+observations:
+  skill_level:
+    type: int
+  weak_topics:
+    type: list
+  confidence:
+    type: float
